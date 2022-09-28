@@ -17,7 +17,10 @@
   },
   "dependencies": {
     "gatsby": "^4.24.0",
+    "gatsby-plugin-image": "^2.24.0",
     "gatsby-plugin-netlify-cms": "^6.24.0",
+    "gatsby-plugin-sharp": "^4.24.0",
+    "gatsby-source-filesystem": "^4.24.0",
     "netlify-cms-app": "^2.15.72",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
@@ -26,6 +29,11 @@
     "@types/node": "^17.0.45",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
+    "autoprefixer": "^10.4.12",
+    "eslint-config-react-app": "^7.0.1",
+    "gatsby-plugin-postcss": "^5.24.0",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8",
     "typescript": "^4.8.3"
   }
 }
