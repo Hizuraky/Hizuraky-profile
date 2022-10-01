@@ -1,6 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 import js from "./javascript.png"
-import ts from "./typeScript.png"
+import ts from "./typescript.png"
 import aws from "./aws.png"
 import firebase from "./firebase.png"
 import laravel from "./laravel.png"
