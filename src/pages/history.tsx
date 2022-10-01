@@ -1,11 +1,12 @@
 import React from "react"
+import { Layout } from "@/components/layouts"
 
-export default function(){
-  return(
-    <div>
-      History
-    </div>
+const HistoryPage = () => {
+  return (
+    <Layout>
+      <div className="h-20 ">History</div>
+    </Layout>
   )
 }
 
-// export default HistoryPage
+export default HistoryPage

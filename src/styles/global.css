@@ -2,3 +2,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.neumo-blue{
+  box-shadow:  5px 5px 10px #2858bf, -5px -5px 10px #3a81f4;
+  background-color: #3675FD;
+}
+
+.neumo-blue-active{
+  box-shadow:  inset 5px 5px 10px #2858bf, inset -5px -5px 10px #4488f5;
+  background-color: #3c78f9;
+}
+
+.neumo-white{
+  box-shadow:  5px 5px 10px #d3d4d6, -5px -5px 10px #ffffff;
+  background-color: #F0F1F3;
+}
+
+.trans {
+  transition: 0.3s
+}
+
+.full {
+  width: 100%;
+  height: 100%;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
