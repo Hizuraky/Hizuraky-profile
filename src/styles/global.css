@@ -9,17 +9,8 @@
 }
 
 .neumo-blue-active{
-  box-shadow:  inset 5px 5px 10px #2858bf, inset -5px -5px 10px #4488f5;
+  box-shadow:  inset 5px 5px 10px #204ba8, inset -5px -5px 10px #498dfb;
   background-color: #3c78f9;
-}
-
-.neumo-white{
-  box-shadow:  5px 5px 10px #d3d4d6, -5px -5px 10px #ffffff;
-  background-color: #F0F1F3;
-}
-
-.trans {
-  transition: 0.3s
 }
 
 .full {
@@ -30,4 +21,9 @@
 .center {
   justify-content: center;
   align-items: center;
+}
+
+
+.trans {
+  transition: 0.3s
 }
