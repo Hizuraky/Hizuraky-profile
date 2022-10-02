@@ -49,8 +49,16 @@ module.exports = {
         basic: "5px 5px 10px #dedfe0, -5px -5px 10px #ffffff",
         dark: "5px 5px 10px #171e28, -5px -5px 10px #374a62",
         toggle: "inset 8px 8px 10px #CCCDCF, inset -8px -8px 10px #FFFFFF",
-        "toggle-button": "2px 2px 2px #ACACAC, -2px -2px 2px #FFFFFF",
-        "dark-toggle-button": "2px 2px 2px #4e525d, -2px -2px 2px #98a2b7"
+        "toggle-button": "3px 3px 3px #ACACAC, -3px -3px 3px #FFFFFF",
+        "toggle-button-inner": "inset 3px 3px 3px #ACACAC, inset -3px -3px 3px #FFFFFF",
+        "dark-toggle-button": "2px 2px 2px #4e525d, -2px -2px 2px #98a2b7",
+        "dark-history-circle": "3px 3px 3px #171e28, -3px -3px 3px #374a62",
+        "dark-history-circle-inner": "inset 3px 3px 3px #171e28, inset -3px -3px 3px #374a62"
+      },
+      rotate: {
+        "1/4": "90deg",
+        "1/2": "180deg",
+        "3/4": "270deg"
       }
     }
   },
