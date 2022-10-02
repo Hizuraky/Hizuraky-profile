@@ -4,8 +4,11 @@ import { skills } from "@/data/skill"
 import { BsStarFill, BsStarHalf, BsStar } from "react-icons/bs"
 
 const SkillPage = () => {
-  const List = ({ skill, level, src }: { skill: string; level: number; src: string }) => (
-    <div className="flex w-full md:w-[49%] justify-around p-4 items-center my-[2%] md:my-[1%] rounded-md bg-bg-neumo dark:bg-dark-neumo shadow-basic dark:shadow-dark ">
+  const List = ({ skill, level, src, url }: { skill: string; level: number; src: string; url: string }) => (
+    <div
+      className="flex w-full md:w-[49%] justify-around p-4 items-center my-[2%] md:my-[1%] rounded-md bg-bg-neumo dark:bg-dark-neumo shadow-basic dark:shadow-dark cursor-pointer hover:bg-[#dee1e3]"
+      onClick={() => window.open(url, "_blank")}
+    >
       <div className="flex w-1/2 justify-start items-center">
         <img src={src} alt="" className="w-10 h-10 object-contain mr-2" />
         <p className="font-semibold sm:text-lg text-text dark:text-white">{skill}</p>

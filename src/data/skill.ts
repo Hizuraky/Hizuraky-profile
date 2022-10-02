@@ -7,22 +7,26 @@ export const skills = [
       {
         skill: "JavaScript",
         level: 8,
-        src: icons.js
+        src: icons.js,
+        url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
       },
       {
         skill: "TypeScript",
         level: 7,
-        src: icons.ts
+        src: icons.ts,
+        url: "https://www.typescriptlang.org/"
       },
       {
         skill: "php",
         level: 6,
-        src: icons.php
+        src: icons.php,
+        url: "https://www.php.net/"
       },
       {
         skill: "Python",
         level: 4,
-        src: icons.python
+        src: icons.python,
+        url: "https://www.python.org/"
       }
     ]
   },
@@ -32,37 +36,44 @@ export const skills = [
       {
         skill: "React",
         level: 8,
-        src: icons.react
+        src: icons.react,
+        url: "https://reactjs.org/"
       },
       {
         skill: "ReactNative",
         level: 7,
-        src: icons.react
+        src: icons.react,
+        url: "https://reactnative.dev/"
       },
       {
         skill: "Next.js",
         level: 5,
-        src: icons.next
+        src: icons.next,
+        url: "https://nextjs.org/"
       },
       {
         skill: "Remix",
         level: 5,
-        src: icons.remix
+        src: icons.remix,
+        url: "https://remix.run/"
       },
       {
         skill: "Gatsby",
         level: 5,
-        src: icons.gatsby
+        src: icons.gatsby,
+        url: "https://www.gatsbyjs.com/"
       },
       {
         skill: "Laravel",
         level: 6,
-        src: icons.laravel
+        src: icons.laravel,
+        url: "https://laravel.com/"
       },
       {
         skill: "Django",
         level: 4,
-        src: icons.django
+        src: icons.django,
+        url: "https://docs.djangoproject.com"
       }
     ]
   },
@@ -72,17 +83,20 @@ export const skills = [
       {
         skill: "AWS",
         level: 6,
-        src: icons.aws
+        src: icons.aws,
+        url: "https://aws.amazon.com/"
       },
       {
         skill: "Firebase",
         level: 6,
-        src: icons.firebase
+        src: icons.firebase,
+        url: "https://firebase.google.com/"
       },
       {
         skill: "Docker",
         level: 5,
-        src: icons.docker
+        src: icons.docker,
+        url: "https://www.docker.com/"
       }
     ]
   }
