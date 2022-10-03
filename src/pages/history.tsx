@@ -58,9 +58,9 @@ const HistoryPage = () => {
       <div className="">
         <h1 className="text-primary-text dark:text-dark-primary font-bold text-lg">History</h1>
         <div className="flex w-full p-2 pl-4 rounded-md bg-bg-neumo dark:bg-dark-neumo shadow-basic dark:shadow-dark my-6 flex-col">
-          <p className="text-primary-text dark:text-dark-primary font-semibold">About</p>
+          <p className="text-primary-text dark:text-dark-primary font-semibold mb-2">About</p>
           {histories.about.split("\n").map((l, i) => (
-            <p key={i} className="text-base text-text dark:text-dark-text">
+            <p key={i} className="text-base text-text dark:text-dark-text leading-7">
               {l}
             </p>
           ))}

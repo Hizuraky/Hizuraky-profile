@@ -1,9 +1,8 @@
 export const histories = {
   about: `
     28歳のHizurakyと申します。
-    本名をアナグラム作成サイトに入力して出てきた"Hizuraki"から付けました。
-    "Hizuraki"は既にSNS各所で使われていましたが"Hizuraky"はいなかったので。
     2022-8-28に第一子が産まれ育児奮闘中です。
+    趣味はゴルフ・麻雀・プログラミングです。
   `,
   timeline: [
     {

@@ -23,7 +23,33 @@
   align-items: center;
 }
 
-
 .trans {
   transition: 0.3s
+}
+
+
+.my-react-select-container .my-react-select__option {
+  @apply dark:text-dark-text dark:bg-dark-bg dark:hover:bg-neutral-800;
+}
+
+.my-react-select-container .my-react-select__input-container,
+.my-react-select-container .my-react-select__placeholder,
+.my-react-select-container .my-react-select__single-value {
+  @apply text-neutral-600 dark:text-neutral-200;
+}
+
+.my-react-select-container .my-react-select__control {
+  @apply bg-transparent border-0 p-0 w-full shadow-none
+}
+
+.my-react-select-container {
+  @apply w-full border-0 pl-2
+}
+
+.my-react-select-container .my-react-select__indicator {
+  @apply p-0
+}
+
+.my-react-select-container .my-react-select__indicator-separator {
+  @apply hidden
 }
