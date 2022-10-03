@@ -4,8 +4,8 @@ import { BsFillCalendarCheckFill, BsTagsFill } from "react-icons/bs"
 import { articles } from "@/data/article"
 import { Pagination } from "@/components/Pagination"
 import { Toggle } from "@/components/Toggle"
-import ramble from "@/images/ramble.png"
-import qiita from "@/images/qiita.png"
+import ramble from "@/images/icons/ramble.png"
+import qiita from "@/images/icons/qiita.png"
 import Select from "react-select"
 
 const ArticlePage = () => {
@@ -70,7 +70,7 @@ const ArticlePage = () => {
   return (
     <Layout>
       <div className="">
-        <h1 className="text-primary-text dark:text-dark-primary font-bold text-lg">Skill</h1>
+        <h1 className="text-primary-text dark:text-dark-primary font-bold text-lg">Article</h1>
         <div className="flex items-center">
           <div className="w-60 h-10 shadow-basic-inner rounded-full bg-bg-neumo mr-4 flex justify-between items-center px-4 dark:shadow-dark-inner dark:bg-dark-neumo">
             <BsTagsFill className="text-text text-xl dark:text-dark-text" />

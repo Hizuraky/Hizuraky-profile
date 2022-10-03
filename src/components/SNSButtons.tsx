@@ -1,7 +1,7 @@
 import React from "react"
-import ramble from "@/images/ramble.png"
-import qiita from "@/images/qiita.png"
-import github from "@/images/github.png"
+import ramble from "@/images/icons/ramble.png"
+import qiita from "@/images/icons/qiita.png"
+import github from "@/images/icons/github.png"
 // import zenn from "@/images/zenn.png"
 
 const icons = [

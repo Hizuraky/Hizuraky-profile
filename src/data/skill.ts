@@ -1,4 +1,4 @@
-import icons from "@/images/icons"
+import icons from "@/images/skills"
 
 export const skills = [
   {
