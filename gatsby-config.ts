@@ -15,6 +15,7 @@ const config: GatsbyConfig = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-postcss",
     "gatsby-plugin-catch-links",
+    "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
