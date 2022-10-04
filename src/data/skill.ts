@@ -1,5 +1,9 @@
 import icons from "@/images/skills"
 
+/***
+ * 技術スタックデータ
+ */
+
 export const skills = [
   {
     subTitle: "Language",

@@ -2,6 +2,10 @@ import profile from "@/images/portfolio/profile.png"
 import shiftmaker from "@/images/portfolio/shiftmaker.png"
 import kstyping from "@/images/portfolio/kstyping.png"
 
+/***
+ * 個人開発データ
+ */
+
 export const portfolios = [
   {
     title: "Hizuraky",

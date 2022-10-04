@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react"
 import { MdContentCopy } from "react-icons/md"
 
+/***
+ * FooterのEmailラベル
+ */
+
 export const EmailLabel = () => {
   const [isCopied, setCopied] = useState(false)
   useEffect(() => {

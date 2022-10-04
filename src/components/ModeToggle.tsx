@@ -1,5 +1,9 @@
 import * as React from "react"
 
+/***
+ * ダークモード切り替えトグル
+ */
+
 export const ModeToggle = ({ className }: { className?: string }) => (
   <button
     title="Toggle Theme"

@@ -3,10 +3,10 @@ import { navigate } from "gatsby"
 import { useLocation } from "@reach/router"
 
 const tabs = [
-  { text: "History", path: "/history" },
-  { text: "Skill", path: "/skill" },
-  { text: "Article", path: "/article" },
-  { text: "Portfolio", path: "/portfolio" }
+  { text: "History", path: "/history/" },
+  { text: "Skill", path: "/skill/" },
+  { text: "Article", path: "/article/" },
+  { text: "Portfolio", path: "/portfolio/" }
 ]
 export const TavNav = () => {
   const { pathname } = useLocation()

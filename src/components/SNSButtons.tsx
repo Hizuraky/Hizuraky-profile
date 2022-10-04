@@ -4,6 +4,10 @@ import qiita from "@/images/icons/qiita.png"
 import github from "@/images/icons/github.png"
 // import zenn from "@/images/zenn.png"
 
+/***
+ * Header / Footer のSNSリンクボタン
+ */
+
 const icons = [
   { src: github, url: "https://github.com/Hizuraky" },
   { src: ramble, url: "https://ramble.impl.co.jp/author/36/" },

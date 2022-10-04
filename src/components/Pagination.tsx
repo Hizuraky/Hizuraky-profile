@@ -1,14 +1,12 @@
 import React from "react"
 
-export const Pagination = ({
-  array,
-  page,
-  setPage
-}: {
-  array: any[]
-  page: number
-  setPage: React.Dispatch<React.SetStateAction<number>>
-}) => {
+/***
+ * ページネーション
+ */
+
+type Props = { array: any[]; page: number; setPage: React.Dispatch<React.SetStateAction<number>> }
+
+export const Pagination = ({ array, page, setPage }: Props) => {
   const pages = array.length % 5 ? Math.floor(array.length / 5) + 1 : Math.floor(array.length / 5)
 
   return (

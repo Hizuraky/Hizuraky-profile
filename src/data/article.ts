@@ -1,3 +1,7 @@
+/***
+ * 投稿記事データ
+ */
+
 export const articles = {
   tags: [
     "React",

@@ -1,3 +1,7 @@
+/***
+ * 経歴データ
+ */
+
 export const histories = {
   about: `
     北海道在住28歳です。

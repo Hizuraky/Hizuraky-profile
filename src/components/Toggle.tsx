@@ -1,5 +1,9 @@
 import * as React from "react"
 
+/***
+ * トグルボタン
+ */
+
 type Props = {
   id: string
   className?: string
