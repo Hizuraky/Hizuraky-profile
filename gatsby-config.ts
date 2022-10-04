@@ -23,6 +23,18 @@ const config: GatsbyConfig = {
         },
         extensions: ["js", "ts", "tsx"]
       }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Hizuraky`,
+        short_name: `Hizuraky`,
+        start_url: `/history`,
+        background_color: `#F2F4F5`,
+        theme_color: `#3675FD`,
+        display: `standalone`,
+        icon: `src/images/icon.png`
+      }
     }
   ]
 }
