@@ -15,7 +15,7 @@ export const TavNav = () => {
       {tabs.map((tab, i) => (
         <div
           className={`${
-            pathname === tab.path || pathname === `${tab.path}/`
+            pathname === tab.path || pathname === tab.path.slice(0, -1)
               ? "neumo-blue-active"
               : "shadow-basic dark:shadow-dark bg-bg dark:bg-dark-neumo  cursor-pointer hover:bg-[#dee1e3]"
           }  w-1/4 ml-2 h-9 flex justify-center items-center rounded-sm`}
@@ -24,7 +24,7 @@ export const TavNav = () => {
         >
           <p
             className={`text-sm sm:text-base ${
-              pathname === tab.path || pathname === `${tab.path}/` ? "text-white font-bold" : "dark:text-white"
+              pathname === tab.path || pathname === tab.path.slice(0, -1) ? "text-white font-bold" : "dark:text-white"
             }`}
           >
             {tab.text}
