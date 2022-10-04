@@ -5,6 +5,9 @@ const config: GatsbyConfig = {
     title: "Hizuraky",
     siteUrl: "https://www.yourdomain.tld"
   },
+  flags: {
+    DEV_SSR: true
+  },
   graphqlTypegen: true,
   plugins: [
     "gatsby-plugin-netlify-cms",

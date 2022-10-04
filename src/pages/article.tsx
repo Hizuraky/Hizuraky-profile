@@ -41,7 +41,7 @@ const ArticlePage = () => {
   const List = ({ date, title, tags, site, url }: { date: string; title: string; tags: string[]; site: string; url: string }) => (
     <div
       className="flex w-full items-center p-2 sm:p-4 my-4 rounded-md bg-bg-neumo dark:bg-dark-neumo shadow-basic dark:shadow-dark justify-between flex-col md:flex-row"
-      onClick={() => window.open(url, "_blank")}
+      onClick={() => typeof window !== "undefined" && window.open(url, "_blank")}
     >
       <h1 className="text-lg font-bold text-text dark:text-white w-full md:max-w-[50%] md:w-[50%] md:mr-4 px-3 md:px-0">{title}</h1>
       <div className="flex items-end sm:items-center md:flex-row justify-between  md:w-[47%] w-full">

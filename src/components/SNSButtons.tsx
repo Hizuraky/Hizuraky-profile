@@ -17,7 +17,7 @@ export const SNSButtons = () => (
       <div
         className="neumo-blue w-10 h-10 flex justify-center items-center rounded-full p-1 mr-2 md:mr-4 cursor-pointer"
         key={i}
-        onClick={() => window.open(icon.url, "_blank")}
+        onClick={() => typeof window !== "undefined" && window.open(icon.url, "_blank")}
       >
         <div className="flex justify-center items-center bg-white rounded-full w-full h-full p-1 hover:bg-[#dee1e3]">
           <img src={icon.src} alt="" className="full rounded-full" />

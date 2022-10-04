@@ -53,7 +53,7 @@ const PortfolioPage = () => {
             className={`w-20 h-8 rounded-full p-1 shadow-basic mr-3 flex center dark:shadow-dark cursor-pointer ${
               !url && "cursor-not-allowed"
             }`}
-            onClick={() => url && window.open(url, "_blank")}
+            onClick={() => url && typeof window !== "undefined" && window.open(url, "_blank")}
           >
             <p
               className={`full rounded-full bg-white text-sm text-text flex center dark:bg-slate-600 dark:text-dark-text ${
@@ -65,13 +65,13 @@ const PortfolioPage = () => {
           </div>
           <div
             className={`w-8 h-8  rounded-full p-1 shadow-basic mr-3 dark:shadow-dark cursor-pointer ${!github && "cursor-not-allowed"}`}
-            onClick={() => github && window.open(github, "_blank")}
+            onClick={() => github && typeof window !== "undefined" && window.open(github, "_blank")}
           >
             <img src={githubImg} alt="" className={`full rounded-full bg-white ${!github && "bg-gray-400"}`} />
           </div>
           <div
             className={`w-8 h-8 rounded-full p-1 shadow-basic mr-3 dark:shadow-dark cursor-pointer ${!article && "cursor-not-allowed"}`}
-            onClick={() => article && window.open(article, "_blank")}
+            onClick={() => article && typeof window !== "undefined" && window.open(article, "_blank")}
           >
             <img src={site === "qiita" ? qiita : ramble} alt="" className={`full rounded-full bg-white ${!article && "bg-gray-400"}`} />
           </div>
