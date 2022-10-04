@@ -11,7 +11,7 @@ export const portfolios = [
     release: "2022-10",
     github: "https://github.com/Hizuraky/Hizuraky-profile",
     site: "qiita",
-    article: "https://qiita.com/Hizuraky/items/57b9dceaeb2cad9a4d7a",
+    article: "",
     text: `
       自分の記事やポートフォリオをまとめた当サイト。
       Gatsbyで作られている。

@@ -22,7 +22,7 @@ const PortfolioPage = () => {
   const [page, setPage] = useState(1)
 
   const List = ({ title, tags, src, url, site, github, article, release, text }: Portfolio) => (
-    <div className="flex w-full items-center my-8 rounded-md bg-bg-neumo dark:bg-dark-neumo shadow-basic dark:shadow-dark justify-between flex-col md:flex-row ">
+    <div className="flex w-full items-center mb-8 rounded-md bg-bg-neumo dark:bg-dark-neumo shadow-basic dark:shadow-dark justify-between flex-col md:flex-row ">
       <img src={src} alt="" className="w-full md:max-w-[320px] lg:max-w-[400px] object-cover rounded-md" />
       <div className="flex flex-col items-start full p-2 md:justify-between h-full w-[50%]">
         <h1 className="text-lg font-bold text-text dark:text-white">{title}</h1>
@@ -50,16 +50,30 @@ const PortfolioPage = () => {
         ))}
         <div className="flex items-center mt-2 w-full justify-end">
           <div
-            className="w-20 h-8 rounded-full p-1 shadow-basic mr-3 flex center dark:shadow-dark"
-            onClick={() => window.open(url, "_blank")}
+            className={`w-20 h-8 rounded-full p-1 shadow-basic mr-3 flex center dark:shadow-dark cursor-pointer ${
+              !url && "cursor-not-allowed"
+            }`}
+            onClick={() => url && window.open(url, "_blank")}
           >
-            <p className="full rounded-full bg-white text-sm text-text flex center dark:bg-slate-600 dark:text-dark-text">Web site</p>
+            <p
+              className={`full rounded-full bg-white text-sm text-text flex center dark:bg-slate-600 dark:text-dark-text ${
+                !url && "bg-gray-400"
+              }`}
+            >
+              Web site
+            </p>
           </div>
-          <div className="w-8 h-8  rounded-full p-1 shadow-basic mr-3 dark:shadow-dark" onClick={() => window.open(github, "_blank")}>
-            <img src={githubImg} alt="" className="full rounded-full bg-white" />
+          <div
+            className={`w-8 h-8  rounded-full p-1 shadow-basic mr-3 dark:shadow-dark cursor-pointer ${!github && "cursor-not-allowed"}`}
+            onClick={() => github && window.open(github, "_blank")}
+          >
+            <img src={githubImg} alt="" className={`full rounded-full bg-white ${!github && "bg-gray-400"}`} />
           </div>
-          <div className="w-8 h-8  rounded-full p-1 shadow-basic mr-3 dark:shadow-dark" onClick={() => window.open(article, "_blank")}>
-            <img src={site === "qiita" ? qiita : ramble} alt="" className="full rounded-full bg-white" />
+          <div
+            className={`w-8 h-8 rounded-full p-1 shadow-basic mr-3 dark:shadow-dark cursor-pointer ${!article && "cursor-not-allowed"}`}
+            onClick={() => article && window.open(article, "_blank")}
+          >
+            <img src={site === "qiita" ? qiita : ramble} alt="" className={`full rounded-full bg-white ${!article && "bg-gray-400"}`} />
           </div>
         </div>
       </div>
@@ -68,7 +82,7 @@ const PortfolioPage = () => {
   return (
     <Layout>
       <div className="">
-        <h1 className="text-primary-text dark:text-dark-primary font-bold text-lg">Article</h1>
+        <h1 className="text-primary-text dark:text-dark-primary font-bold text-lg">Portfolio</h1>
         {portfolios
           .filter((portfolio, i) => (page - 1) * 5 <= i && i < page * 5 && portfolio)
           .map((portfolio, i) => (
