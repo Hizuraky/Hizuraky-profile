@@ -19,13 +19,17 @@ export const SkillList = ({ skill, level, src, url }: Props) => (
     <div className="flex w-1/2 justify-start items-center">
       <p className="text-base text-text-light dark:text-dark-text mr-2 mt-1 sm:mt-2">level</p>
       <div className="flex">
-        {[...Array(5)].map((_, i) => {
-          if (level - i * 2 > 1) {
-            return <BsStarFill className="text-text dark:text-dark-text text-xl sm:text-2xl" />
-          } else if (level - i * 2 === 1) {
-            return <BsStarHalf className="text-text dark:text-dark-text text-xl sm:text-2xl" />
-          } else return <BsStar className="text-text dark:text-dark-text text-xl sm:text-2xl" />
-        })}
+        {[...Array(5)].map((_, i) => (
+          <div key={i}>
+            {level - i * 2 > 1 ? (
+              <BsStarFill className="text-text dark:text-dark-text text-xl sm:text-2xl" />
+            ) : level - i * 2 === 1 ? (
+              <BsStarHalf className="text-text dark:text-dark-text text-xl sm:text-2xl" />
+            ) : (
+              <BsStar className="text-text dark:text-dark-text text-xl sm:text-2xl" />
+            )}
+          </div>
+        ))}
       </div>
     </div>
   </div>

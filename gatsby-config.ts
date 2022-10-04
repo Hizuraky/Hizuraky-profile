@@ -3,7 +3,8 @@ import type { GatsbyConfig } from "gatsby"
 const config: GatsbyConfig = {
   siteMetadata: {
     title: "Hizuraky",
-    siteUrl: "https://www.yourdomain.tld"
+    siteUrl: "https://hizuraky.tk/",
+    description: "Hizuraky profile site"
   },
   flags: {
     DEV_SSR: true

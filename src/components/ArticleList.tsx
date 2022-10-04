@@ -25,10 +25,10 @@ export const ArticleList = ({ date, title, tags, site, url }: Props) => (
           <BsTagsFill className="text-text-light text-xl mr-2" />
           <div className="flex flex-wrap">
             {tags.map((tag, i) => (
-              <p key={i} className="text-sm text-text-light dark:text-dark-text flex md:text-base">
+              <div key={i} className="text-sm text-text-light dark:text-dark-text flex md:text-base">
                 {i !== 0 && <p className="mx-1">/</p>}
                 {tag}
-              </p>
+              </div>
             ))}
           </div>
         </div>
