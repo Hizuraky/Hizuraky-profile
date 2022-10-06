@@ -27,6 +27,13 @@ export const articles = {
   ],
 
   article: [
+　　{
+      date: "2022-10",
+      title: "Reactの状態管理で悩む全ての人へ【2022年】",
+      tags: ["React"],
+      site: "ramble",
+      url: "https://ramble.impl.co.jp/2211/"
+    },
     {
       date: "2022-9",
       title: "【個人開発】シフト自動作成サービス作ってみた。ソースコード同時公開【React/Remix】",
@@ -86,7 +93,7 @@ export const articles = {
     {
       date: "2021-4",
       title: "ReactNativeでログイン機能を実装してみた。",
-      tags: ["AWS", "TypeScript", "Laravel", "個人開発", "Next.js"],
+      tags: ["ReactNative"],
       site: "ramble",
       url: "https://ramble.impl.co.jp/1176/"
     },
