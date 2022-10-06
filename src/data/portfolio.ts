@@ -11,11 +11,11 @@ export const portfolios = [
     title: "Hizuraky",
     tags: ["Gatsby"],
     src: profile,
-    url: "https://shift-maker.vercel.app/",
+    url: "https://hizuraky.tk/history/",
     release: "2022-10",
     github: "https://github.com/Hizuraky/Hizuraky-profile",
     site: "qiita",
-    article: "",
+    article: "https://qiita.com/Hizuraky/items/725f71cd195ee9b6c011",
     text: `
       自分の記事やポートフォリオをまとめた当サイト。
       Gatsbyで作られている。
