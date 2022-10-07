@@ -64,7 +64,7 @@ export const articles = {
     },
     {
       date: "2022-5",
-      title: "【個人開発】ショートカットキー学習サービス作ってみた。(コード公開予定)【Next.js, Laravel, AWS】",
+      title: "【個人開発】ショートカットキー学習サービス作ってみた。ソースコード公開【Next.js, Laravel, AWS】",
       tags: ["AWS", "TypeScript", "Laravel", "個人開発", "Next.js"],
       site: "qiita",
       url: "https://qiita.com/Hizuraky/items/0b4e4e7daf595326e006"
