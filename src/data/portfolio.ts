@@ -43,14 +43,13 @@ export const portfolios = [
     src: kstyping,
     url: "",
     release: "2022-5",
-    github: "",
+    github: "https://github.com/Hizuraky/keyboard-shortcuts-typing",
     site: "qiita",
     article: "https://qiita.com/Hizuraky/items/0b4e4e7daf595326e006",
     text: `
       各アプリのショートカットキーをゲーム感覚で学べるサービス。
       フロントエンドにNext.js、バックエンドはLaravel、インフラをAWSで構築。
-      現在はサイト、Githubと共に非公開。
-      2022年中にソースコードを公開予定。
+      現在サイトは非公開。
     `
   }
 ]

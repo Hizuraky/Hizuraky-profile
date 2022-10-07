@@ -27,12 +27,19 @@ export const articles = {
   ],
 
   article: [
-　　{
+    {
       date: "2022-10",
       title: "Reactの状態管理で悩む全ての人へ【2022年】",
-      tags: ["React"],
+      tags: ["React", "Redux", "TypeScript"],
       site: "ramble",
       url: "https://ramble.impl.co.jp/2211/"
+    },
+    {
+      date: "2022-10",
+      title: "【個人開発】自己紹介ページ作ってみた。ソースコード公開【Gatsby/React】",
+      tags: ["React", "個人開発", "Netlify", "gatsby"],
+      site: "qiita",
+      url: "https://qiita.com/Hizuraky/items/725f71cd195ee9b6c011"
     },
     {
       date: "2022-9",
@@ -93,7 +100,7 @@ export const articles = {
     {
       date: "2021-4",
       title: "ReactNativeでログイン機能を実装してみた。",
-      tags: ["ReactNative"],
+      tags: ["ReactNative", "Firebase"],
       site: "ramble",
       url: "https://ramble.impl.co.jp/1176/"
     },
