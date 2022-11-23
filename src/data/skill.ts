@@ -16,7 +16,7 @@ export const skills = [
       },
       {
         skill: "TypeScript",
-        level: 7,
+        level: 8,
         src: icons.ts,
         url: "https://www.typescriptlang.org/"
       },
@@ -39,7 +39,7 @@ export const skills = [
     skills: [
       {
         skill: "React",
-        level: 8,
+        level: 9,
         src: icons.react,
         url: "https://reactjs.org/"
       },
@@ -51,7 +51,7 @@ export const skills = [
       },
       {
         skill: "Next.js",
-        level: 5,
+        level: 7,
         src: icons.next,
         url: "https://nextjs.org/"
       },
@@ -82,6 +82,35 @@ export const skills = [
     ]
   },
   {
+    subTitle: "DB",
+    skills: [
+      {
+        skill: "MySQL",
+        level: 8,
+        src: icons.mysql,
+        url: "https://www.mysql.com/jp/"
+      },
+      {
+        skill: "PostgreSQL",
+        level: 6,
+        src: icons.postgresql,
+        url: "https://www.postgresql.org/"
+      },
+      {
+        skill: "MongoDB",
+        level: 5,
+        src: icons.mongodb,
+        url: "https://www.mongodb.com/ja-jp"
+      },
+      {
+        skill: "DynamoDB",
+        level: 5,
+        src: icons.dynamo,
+        url: "https://aws.amazon.com/jp/dynamodb/"
+      },
+    ]
+  },
+  {
     subTitle: "Other",
     skills: [
       {
@@ -101,6 +130,18 @@ export const skills = [
         level: 5,
         src: icons.docker,
         url: "https://www.docker.com/"
+      },
+      {
+        skill: "GitHub",
+        level: 6,
+        src: icons.github,
+        url: "https://github.co.jp/"
+      },
+      {
+        skill: "GitLab",
+        level: 6,
+        src: icons.gitlab,
+        url: "https://about.gitlab.com/ja-jp/"
       }
     ]
   }

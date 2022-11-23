@@ -34,7 +34,6 @@ export const portfolios = [
     text: `
       シフトの自動作成サービス。
       ReactのフレームワークであるRemixで作成し、APIサーバーにHasura,DBサーバーにHerokuを使用。
-      Herokuの無料枠廃止に伴い2022-11-28に一旦非公開予定。
     `
   },
   {

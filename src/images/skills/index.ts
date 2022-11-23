@@ -12,6 +12,12 @@ import remix from "./remix.png"
 import python from "./python.png"
 import react from "./react.png"
 import gatsby from "./gatsby.png"
+import github from "./github.png"
+import gitlab from "./gitlab.png"
+import postgresql from "./postgresql.png"
+import mongodb from "./mongodb.png"
+import mysql from "./mysql.png"
+import dynamo from "./dynamo.png"
 
 export default {
   js,
@@ -26,5 +32,11 @@ export default {
   remix,
   python,
   react,
-  gatsby
+  gatsby,
+  github,
+  gitlab,
+  postgresql,
+  mongodb,
+  mysql,
+  dynamo
 }
