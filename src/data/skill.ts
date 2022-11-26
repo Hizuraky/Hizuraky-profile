@@ -7,6 +7,7 @@ import icons from "@/images/skills"
 export const skills = [
   {
     subTitle: "Language",
+    count:0,
     skills: [
       {
         skill: "JavaScript",
@@ -36,6 +37,7 @@ export const skills = [
   },
   {
     subTitle: "Library / Framework",
+    count:4,
     skills: [
       {
         skill: "React",
@@ -83,6 +85,7 @@ export const skills = [
   },
   {
     subTitle: "DB",
+    count:11,
     skills: [
       {
         skill: "MySQL",
@@ -112,6 +115,7 @@ export const skills = [
   },
   {
     subTitle: "Other",
+    count:15,
     skills: [
       {
         skill: "AWS",

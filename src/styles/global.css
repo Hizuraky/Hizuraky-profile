@@ -53,3 +53,83 @@
 .my-react-select-container .my-react-select__indicator-separator {
   @apply hidden
 }
+
+@layer components {
+  .bg-gradient{
+    background: linear-gradient(to right, #4c85f0 0%,#1444bc 100%);
+  }
+
+  .gradient-anim::before {
+    animation: gradient-anim 2.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    background: linear-gradient(to right, #4c85f0 0,#1444bc 100%);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: left center;
+    border-radius: 3px;
+  }
+  .gradient-anim-text {
+    padding: 3px 5px;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+  }
+
+  @keyframes gradient-anim {
+    0% {
+      opacity: 0;
+      transform: scaleX(0) translateX(-5%);
+    }
+    30% {
+      transform: scaleX(1) translateX(0);
+    }
+    100% {
+      transform: scaleX(1) translateX(0);
+    }
+    30%, 100% {
+      opacity: 1;
+    }
+  }
+  .line {
+    display: block;
+    position: relative;
+  }
+
+  .line::after {
+    background: linear-gradient(to right, #4c85f0 0%,#1444bc 100%);
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    transform: translateX(-50%);
+    transition: 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+  }
+
+  .line.is-animated::after {
+    width: 100%;
+  }
+
+  .slidIn-anim {
+    animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-180px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
