@@ -29,7 +29,7 @@ export const HistoryList = ({ start, end, title, content, index }: Props) => (
         </p>
         <h1 className="font-semibold sm:text-lg text-text dark:text-white">{title}</h1>
         {content.split("\n").map((l, i) => (
-          <p key={i} className="text-base text-text dark:text-dark-text mr-2 mt-1 sm:mt-2">
+          <p key={i} className="text-base text-text dark:text-dark-text mr-2">
             {l}
           </p>
         ))}
@@ -47,7 +47,7 @@ export const HistoryList = ({ start, end, title, content, index }: Props) => (
           </p>
           <h1 className="font-semibold sm:text-lg text-text dark:text-white">{title}</h1>
           {content.split("\n").map((l, i) => (
-            <p key={i} className="text-base text-text dark:text-dark-text mr-2 mt-1 sm:mt-2">
+            <p key={i} className="text-base text-text dark:text-dark-text mr-2 mt-1">
               {l}
             </p>
           ))}
