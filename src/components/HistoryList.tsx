@@ -35,9 +35,10 @@ export const HistoryList = ({ start, end, title, content, index }: Props) => (
         ))}
       </div>
     </div>
-    <div className={`full items-center my-4 flex lg:hidden`}>
+    <div className={`full items-center my-4 flex lg:hidden pl-10`}>
+      <div className={`transform rotate-3/4 left-3 text-bg-neumo dark:text-dark-neumo text-[40px] absolute z-50`}>▲</div>
       <div className="flex w-full p-2 items-center pl-4 rounded-md bg-bg-neumo dark:bg-dark-neumo shadow-basic dark:shadow-dark">
-        <div className="w-8 h-8 shadow-toggle-button bg-primary rounded-full p-2 dark:shadow-dark-history-circle mr-4 z-20">
+        <div className="w-8 h-8 shadow-toggle-button bg-primary rounded-full p-2 dark:shadow-dark-history-circle mr-4 z-20 ml-[-56px]">
           <div className="full bg-bg dark:bg-dark-bg rounded-full shadow-toggle-button-inner dark:shadow-dark-history-circle-inner" />
         </div>
         <div className="flex flex-col justify-center w-[94%]">

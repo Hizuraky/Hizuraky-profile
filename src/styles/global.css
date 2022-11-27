@@ -132,4 +132,34 @@
       opacity: 1;
     }
   }
+
+  .slidUp-anim {
+    animation: slideUp 0.6s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(380px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .zoomIn-anim {
+    animation: zoomIn 0.8s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 }

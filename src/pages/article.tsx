@@ -89,7 +89,7 @@ const ArticlePage = () => {
               </div>
             ))}
         </div>
-        <Pagination page={page} setPage={setPage} array={viewArticle} setTime={setTime} />
+        <Pagination page={page} setPage={setPage} array={viewArticle} />
       </div>
     </Layout>
   )

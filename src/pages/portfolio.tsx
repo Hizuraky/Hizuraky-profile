@@ -4,6 +4,7 @@ import { portfolios } from "@/data/portfolio"
 import { Pagination } from "@/components/Pagination"
 import { PortfolioList } from "@/components/PortfolioList"
 import { Title } from "@/components/Title"
+import clsx from "clsx"
 
 /***
  * 個人開発一覧画面
@@ -22,12 +23,16 @@ const PortfolioPage = () => {
   return (
     <Layout>
       <Title isAnimate={time > 1} title="Portfolio" />
-      {portfolios
-        .filter((portfolio, i) => (page - 1) * 5 <= i && i < page * 5 && portfolio)
-        .map((portfolio, i) => (
-          <PortfolioList {...portfolio} key={i} />
-        ))}
-      <Pagination page={page} setPage={setPage} array={portfolios} setTime={setTime} />
+      <div className="my-2">
+        {portfolios
+          .filter((portfolio, i) => (page - 1) * 5 <= i && i < page * 5 && portfolio)
+          .map((portfolio, i) => (
+            <div className={clsx("opacity-0", i < time / 5 && "zoomIn-anim")} key={i}>
+              <PortfolioList {...portfolio} key={i} />
+            </div>
+          ))}
+      </div>
+      <Pagination page={page} setPage={setPage} array={portfolios} />
     </Layout>
   )
 }
